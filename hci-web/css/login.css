@@ -1,0 +1,233 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.parent-login{
+    display: flex;
+    height: 100vh;
+}
+
+.left-side{
+    width: 40%;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    width: 60%;
+}
+
+.image-bg{
+    background-image: linear-gradient(rgba(43, 87, 71, 0.55), rgba(43, 87, 71, 0.55)), url(../images/recipes/pexels-yente-van-eynde-2403391.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header{
+    padding: 64px;
+}
+
+.logo {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-decoration: none; 
+    margin-bottom: 30px;
+}
+
+.finder {
+    color: #44A742;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: "Lato", sans-serif;
+    font-weight:900;
+    font-size: 30px;
+    margin-top: 30px;
+    padding-right: 30px;
+}
+
+.membership-nav{
+    text-align: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.sign-up{
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+}
+
+h2{
+    font-family: "Lato", sans-serif;
+    font-weight:900;
+    margin-bottom: 25px;
+}
+
+
+.login {
+    font-family: "Lato", sans-serif;
+    margin: 20px auto;
+    padding: 40px 50px;
+    max-width: 300px;
+    border-radius: 15px;
+    background: #2B5747;
+    filter: drop-shadow(0px 15px 20px #212121);
+}
+
+
+#login-id{
+    margin-top: 10px;
+}
+
+  .login input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px 12px;
+    font-size: 14px;
+    border-radius: 2px; 
+    font-family: "Open Sans", sans-serif;
+  }
+
+.login input[type=text],
+.login input[type=password] {
+  border: 1px solid #c0c0c0;
+  border-radius: 15px;
+  transition: .2s;
+}
+
+.login input[type=text]:hover {
+  border-color: #44A742;
+  outline: none;
+  transition: all .2s ease-in-out;
+} 
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.194);
+}
+
+.button{
+    width: 100%;
+    padding: 14px 12px;
+    margin: 20px 0px;
+    background-color: #44A742;
+    border-radius: 15px;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color: #167E13; 
+}
+
+.button-text {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2%;
+    font-size: 16px;
+    color: white;
+}
+
+#first-login {
+    text-decoration: none;
+}
+  
+#first-login:hover {
+    text-decoration: none;
+}
+
+.login input[type=submit]:hover {
+  background-color:#167E13;
+}
+
+  .login h2 {
+    margin: 20px 0 0; 
+    color: #ffffff;
+    font-size: 28px;
+  }
+
+.login p {
+  margin-bottom: 40px;
+  color: white;
+}
+
+.links {
+    font-family: "Open Sans", sans-serif;
+    display: table;
+    width: 100%;  
+    box-sizing: border-box;
+    border-top: 1px solid #c0c0c0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+}
+
+.links a:first-child {
+  text-align: left;
+}
+
+.links a:last-child {
+  text-align: right;
+}
+
+  .login h2,
+  .login p,
+  .login a {
+    text-align: center;    
+  }
+
+.login a {
+  text-decoration: none;  
+  font-size: .8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+
+/* responsive */
+@media (max-width: 393px){
+
+
+    .left-side{
+        display: none;
+    }
+
+    .right-side{
+        width: 100%;
+    }
+
+    .parent-login{
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color:darkseagreen;
+    }
+}

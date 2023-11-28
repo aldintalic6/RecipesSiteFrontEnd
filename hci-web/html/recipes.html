@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shourtcout icon" type="image/png" href="../images/recipes/fflogo.png">
+        <link rel="stylesheet" href="../css/recipes.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Recipes</title>
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"
+      ></script>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+    
+    </head>
+    <body>
+        <div class="navbar-div">
+            <div class="container">
+                <div class="navbar">
+                  <div class="search-bar-img">
+                    <img src="../images/recipes/Vector.png" alt="search-bar-img" class="icon2">
+                  </div>
+                    <a href="./index.html" class="logo">
+                        Flavor<span class="finder">Finder</span>
+                    </a>
+                    <div class="hamburger" onclick="toggleMenu()">
+                      <div class="hamburger-line"></div>
+                      <div class="hamburger-line"></div>
+                      <div class="hamburger-line"></div>
+                  </div>
+                    <div class="navlinks">
+                        <a href="./index.html" class="navlink">Home</a>
+                        <a href="./recipes.html" class="navlink">Recipes</a>
+                        <a href="./myrecipes.html" class="navlink">My Recipes</a>
+                    </div>
+                    <div class="search-bar">
+                      <div class="search-bar-img1">
+                        <img src="../images/recipes/Vector.png" alt="search-bar-img" class="icon2">
+                      </div>
+                        <input type="text" class="search-text" placeholder="Search" />
+                    </div>
+                    <div class="rounded-picture">
+                      <img src="../images/recipes/pexels-pixabay-220453 (1).jpg" alt="profile-picture" class="icon3">
+                      <div class="signout-text">
+                        <a href="./login.html" class="signout-link">Sign Out</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="image-bg">
+                <div class="container">
+                    <h1 class="recipes-heading">RECIPES</h1>
+                    <div class="recipes-navlinks">
+                        <a href="./index.html" class="recipes-navlink">HOME</a>
+                        <img src="../images/recipes/next (4).png" alt="arrow" class="arrow">
+                        <a href="./recipes.html" class="recipes-navlink">RECIPES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-menu" style="width: 0px">
+          <div class="slide-menu-nav">
+            <a href="./index.html" class="logo"> 
+              Flavor<span class="finder" id="menu-finder">Finder</span>
+          </a>
+          <div class="slide-menu-nav-div">
+            <a href="./index.html" class="navlink">Home</a>
+            <a href="./recipes.html" class="navlink">Recipes</a>
+            <a href="./myrecipes.html" class="navlink">My Recipes</a>
+            <hr class="navline">
+            <a href="./login.html" class="navlink signout-link">Sign Out</a>
+          </div>
+          </div>
+        </div>
+
+        <div class="container" id="responsive-con">
+          <a href="./index.html">
+            <img src="../images/recipes/right-arrow.png" alt="arrow2" class="arrow2">   
+          </a>
+        </div>
+        <div class="line"></div>
+
+        <div class="second-section">
+            <div class="container">
+        
+                <div class="mt-5">
+                  <!-- 1. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-anthony-leong-2092906.jpg" alt="Melina">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head">
+                                  Italian Pasta
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Melina Dobrik
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>Pasta (e.g. spaghetti, penne, fusilli)</li>
+                                    <li>Salt (for seasoning the pasta water)</li>
+                                    <li>Olive oil (for cooking or drizzling over the pasta)</li>
+                                    <li>Garlic (minced or sliced)</li>
+                                    <li>Onion (finely chopped)</li>
+                                    <li>Tomatoes (canned or fresh, diced or crushed)</li>
+                                    <li>Tomato paste (for added richness and depth of flavor)</li>
+                                    <li>Basil (fresh or dried)</li>
+                                    <li>Oregano (fresh or dried)</li>
+                                  </ul>
+                            </div>
+                          </div>
+                          <p class="prep-time">
+                            Prep time: 20 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-kristina-paukshtite-1146760.jpg" alt="Hamza" style="object-fit: cover;">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head">
+                                  Pizza
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Hamza Doe
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>Pizza dough (either store-bought or homemade)</li>
+                                    <li>Tomato sauce (either store-bought or homemade)</li>
+                                    <li>Mozzarella cheese (shredded or sliced)</li>
+                                    <li>Parmesan cheese (grated or shaved)</li>
+                                    <li>Basil (fresh or dried)</li>
+                                    <li>Oregano (fresh or dried)</li>
+                                    <li>Garlic (minced or sliced)</li>
+                                    <li>Onion (finely chopped or sliced)</li>
+                                    <li>Bell peppers (sliced or diced)</li>
+                                    <li>Mushrooms (sliced or diced)</li>
+                                    <li>Pepperoni (sliced)</li>
+                                </ul>
+                            </div>
+                          </div>
+                          <p class="prep-time">
+                            Prep time: 15 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-dana-tentis-1213710.jpg" alt="Selma" style="object-fit: cover;">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head">
+                                  Salad
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Selma Joe
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>Greens (e.g. lettuce, spinach, arugula, kale)</li>
+                                    <li>Tomatoes (sliced or diced)</li>
+                                    <li>Cucumbers (sliced or diced)</li>
+                                    <li>Bell peppers (sliced or diced)</li>
+                                    <li>Carrots (shredded or sliced)</li>
+                                    <li>Radishes (sliced or diced)</li>
+                                    <li>Red onion (sliced or diced)</li>
+                                    <li>Avocado (sliced or diced)</li>
+                                </ul>
+                            </div>
+                          </div>
+                          <p class="prep-time">
+                            Prep time: 10 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- 4. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-dana-tentis-725991.jpg" alt="Yasmin" style="object-fit: cover;">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head">
+                                  Salmon
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Yasmin Yale
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>Salmon fillets (fresh or frozen)</li>
+                                    <li>Salt and pepper (for seasoning the salmon)</li>
+                                    <li>Olive oil (for cooking or marinating the salmon)</li>
+                                    <li>Lemon (sliced or juiced)</li>
+                                    <li>Garlic (minced or sliced)</li>
+                                    <li>Dill (fresh or dried)</li>
+                                    <li>Parsley (fresh or dried)</li>
+                                    <li>Butter (for added richness and flavor)</li>
+                                    <li>White wine (for deglazing and adding acidity)</li>
+                                    <li>Soy sauce (for a savory umami flavor)</li>
+                                </ul>
+                            </div>
+                            </div>
+                          <p class="prep-time">
+                            Prep time: 45 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- 5. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-media-lens-king-6920656.jpg" alt="Mirza" style="object-fit: cover;">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head">
+                                  Ćevapi
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Mirza Mrkva
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>Ground beef (or a mixture of beef)</li>
+                                    <li>Onion (finely chopped)</li>
+                                    <li>Garlic (minced or finely chopped)</li>
+                                    <li>Paprika (sweet or smoked)</li>
+                                    <li>Salt and pepper (for seasoning the meat)</li>
+                                    <li>Baking soda (to help tenderize the meat)</li>
+                                    <li>Bread crumbs (for binding the meat)</li>
+                                </ul>
+                            </div>
+                            </div>
+                          <p class="prep-time">
+                            Prep time: 20 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- 6. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-polina-tankilevitch-4109998.jpg" alt="Benjamin" style="object-fit: cover;">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head" id="chocolate-cake">
+                                  Chocolate Cake
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Benjamin Tyson
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>All-purpose flour</li>
+                                    <li>Cocoa powder (unsweetened)</li>
+                                    <li>Baking powder</li>
+                                    <li>Baking soda</li>
+                                    <li>Salt</li>
+                                    <li>Granulated sugar</li>
+                                    <li>Brown sugar</li>
+                                    <li>Butter (unsalted, at room temperature)</li>
+                                    <li>Eggs</li>
+                                    <li>Vanilla extract</li>
+                                </ul>
+                            </div>
+                            </div>
+                          <p class="prep-time">
+                            Prep time: 50 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 7. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-valeria-boltneva-1893556.jpg" alt="Benjamin" style="object-fit: cover;">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head">
+                                  Fries
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Selma Joe
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>Greens (e.g. lettuce, spinach, arugula, kale)</li>
+                                    <li>Tomatoes (sliced or diced)</li>
+                                    <li>Cucumbers (sliced or diced)</li>
+                                    <li>Bell peppers (sliced or diced)</li>
+                                    <li>Carrots (shredded or sliced)</li>
+                                    <li>Radishes (sliced or diced)</li>
+                                    <li>Red onion (sliced or diced)</li>
+                                    <li>Avocado (sliced or diced)</li>
+                                </ul>
+                            </div>
+                            </div>
+                          <p class="prep-time">
+                            Prep time: 10 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 8. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-valeria-boltneva-1199957.jpg" alt="Benjamin" style="object-fit: cover;">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head">
+                                  Burger
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Hamya Joe
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>Ground beef (or a mixture of beef and pork)</li>
+                                    <li>Salt and pepper (for seasoning the meat)</li>
+                                    <li>Hamburger buns</li>
+                                    <li>Lettuce (leaf or shredded)</li>
+                                    <li>Tomatoes (sliced)</li>
+                                    <li>Onion (sliced or diced)</li>
+                                    <li>Pickles (sliced)</li>
+                                    <li>Cheese (e.g. cheddar, American, Swiss)</li>
+                                    <li>Ketchup</li>
+                                    <li>Mustard (e.g. yellow, Dijon)</li>
+                                </ul>
+                            </div>
+                            </div>
+                          <p class="prep-time">
+                            Prep time: 10 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 9. kartica -->
+                  <div class="col-3">
+                    <div class="flip-card-container" style="--hue: 220">
+                      <div class="flip-card">
+                        <div class="card-front">
+                          <figure>
+                            <div class="img-bg"></div>
+                            <img src="../images/recipes/pexels-olena-bohovyk-3323680.jpg" alt="Benjamin" style="object-fit: cover;">
+                          </figure>
+                        </div>
+        
+                        <div class="card-back" style="
+                            background-color: #2b5747;
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                          ">
+                          <div>
+                            <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                              <div class="margin-bottom">
+                                <h2 class="flip-card-head">
+                                  Pancakes
+                                </h2>
+                                <p class="paragraph-style">
+                                  by Jon Jones
+                                </p>
+                              </div>
+                              <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                            </div>
+                            <div class="ingredients-text">
+                                <h3 class="ingredients-heading">
+                                    Ingredients: 
+                                </h3>
+                                <ul class="paragraph2-style">
+                                    <li>All-purpose flour</li>
+                                    <li>Baking powder</li>
+                                    <li>Baking soda</li>
+                                    <li>Salt</li>
+                                    <li>Granulated sugar</li>
+                                    <li>Eggs</li>
+                                    <li>Milk</li>
+                                    <li>Butter (unsalted, melted)</li>
+                                    <li>Vanilla extract</li>
+                                </ul>
+                            </div>
+                            </div>
+                          <p class="prep-time">
+                            Prep time: 5 min.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <p class="footer-text">© 2023 Recipe App, All Rights Reserved </p>
+          </div>
+        </footer>
+        </div>
+        <script>
+          function toggleMenu() {
+              const slideMenu = document.querySelector('.slide-menu');
+              slideMenu.style.width = slideMenu.style.width === '0px' ? '290px' : '0px';
+    
+              if (slideMenu.style.width === '290px') {
+            document.addEventListener('click', closeMenuOnClickOutside);
+        } else {
+            document.removeEventListener('click', closeMenuOnClickOutside);
+        }
+          }
+          function closeMenuOnClickOutside(event) {
+        const slideMenu = document.querySelector('.slide-menu');
+        
+        if (!event.target.closest('.slide-menu') && !event.target.closest('.hamburger')) {
+            slideMenu.style.width = '0px';
+            document.removeEventListener('click', closeMenuOnClickOutside);
+        }
+    }
+      </script>
+    </body>
+    
+</html>

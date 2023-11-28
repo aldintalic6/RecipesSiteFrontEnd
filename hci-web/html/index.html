@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shourtcout icon" type="image/png" href="../images/recipes/fflogo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>FlavorFinder</title>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
+  ></script>
+
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container">
+            <div class="navbar">
+              <div class="search-bar-img">
+                <img src="../images/recipes/Vector.png" alt="search-bar-img" class="icon2">
+              </div>
+                <a href="./index.html" class="logo"> 
+                    Flavor<span class="finder">Finder</span>
+                </a>
+                <div class="hamburger" onclick="toggleMenu()">
+                  <div class="hamburger-line"></div>
+                  <div class="hamburger-line"></div>
+                  <div class="hamburger-line"></div>
+              </div>
+                <div class="navlinks">
+                    <a href="./index.html" class="navlink">Home</a>
+                    <a href="./recipes.html" class="navlink">Recipes</a>
+                    <a href="./myrecipes.html" class="navlink">My Recipes</a>
+                </div>
+                <div class="search-bar">
+                  <div class="search-bar-img1">
+                    <img src="../images/recipes/Vector.png" alt="search-bar-img" class="icon2">
+                  </div>
+                    <input type="text" class="search-text" placeholder="Search" />
+                </div>
+                <div class="rounded-picture">
+                  <img src="../images/recipes/pexels-pixabay-220453 (1).jpg" alt="profile-picture" class="icon3">
+                  <div class="signout-text">
+                    <a href="./login.html" class="signout-link">Sign Out</a>
+                  </div>
+                </div>
+                
+            </div>
+            <div class="content-section">
+                <div class="first-column">
+                    <div class="text-container">
+                        <h1 class="main-text">Easy and Affordable Meal Ideas for Every Occasion</h1>
+                        <p class="sub-text">Discover Delicious Homemade Meals With Our Easy-To-Follow Recipes. Transform your kitchen into a culinary playground. Our easy-to-follow recipes make cooking fun and stress-free.</p>
+                        <a href="#section2" class="button">
+                          <span class="button-text">Explore</span>
+                      </a>
+                    </div>
+                </div>
+
+                <div class="second-column">
+                    <div class="image-container">
+                        <img src="../images/recipes/hciiweb.png" alt="Image" class="image">
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-header">
+                          
+                        <h1 class="header-text">
+                          Alma
+                        </h1>
+                          <div class="rating">
+                            <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                        <h1 class="header-text">5.0</h1>
+                          </div>
+                        </div>
+                        <p class="comment-text">
+                          “The food was simply delicious. I could taste the passion and care that went into every dish.”
+                        </p>
+                      </div>
+                      
+                      <div class="card-wrap">
+                        <div class="card-header">
+                          
+                        <h1 class="header-text">
+                          Mirsad
+                        </h1>
+                          <div class="rating">
+                            <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                        <h1 class="header-text">5.0</h1>
+                          </div>
+                        </div>
+                        <p class="comment-text">
+                          “Not only delicious, but also visually stunning. It was truly a feast for the senses!”
+                        </p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-menu" style="width: 0px">
+      <div class="slide-menu-nav">
+        <a href="./index.html" class="logo"> 
+          Flavor<span class="finder" id="menu-finder">Finder</span>
+      </a>
+      <div class="slide-menu-nav-div">
+        <a href="./index.html" class="navlink">Home</a>
+        <a href="./recipes.html" class="navlink">Recipes</a>
+        <a href="./myrecipes.html" class="navlink">My Recipes</a>
+        <hr class="navline">
+        <a href="./login.html" class="navlink signout-link">Sign Out</a>
+      </div>
+      </div>
+    </div>
+
+    <div class="second-section" id="section2">
+        <div class="container">
+            <div class="second-section-content">
+                <div class="second-section-heading">
+                    <h2 class="featured-recipes">Featured Recipes</h2>
+                    <div class="divider"></div>
+                </div>
+                <a href="./recipes.html" class="see-all">See All</a>
+            </div>
+
+            <!-- <div class="cards">
+              <div class="container">
+                
+              </div>
+            </div> -->
+    
+            <div class="mt-5">
+              
+              <!-- 1. kartica -->
+              <div class="col-3"> 
+                <div class="flip-card-container" style="--hue: 220">
+                  <div class="flip-card">
+                    <div class="card-front">
+                      <figure>
+                        <div class="img-bg"></div>
+                        <img src="../images/recipes/pexels-anthony-leong-2092906.jpg" alt="Melina">
+                      </figure>
+                    </div>
+    
+                    <div class="card-back" style="
+                        background-color: #2b5747;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      ">
+                      <div>
+                        <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                          <div class="margin-bottom">
+                            <h2 class="flip-card-head">
+                              Italian Pasta
+                            </h2>
+                            <p class="paragraph-style">
+                              by Melina Dobrik
+                            </p>
+                          </div>
+                          <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                        </div>
+                        <p class="paragraph2-style">
+                          Pasta is a popular Italian dish made from a variety of doughs and typically served with a sauce. It can be prepared in numerous ways, including baked, boiled, or sautéed, and can be accompanied by a range of ingredients such as vegetables, meats, and cheeses.
+                        </p>
+                      </div>
+                      <p class="prep-time">
+                        Prep time: 20 min.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2. kartica -->
+              <div class="col-3">
+                <div class="flip-card-container" style="--hue: 220">
+                  <div class="flip-card">
+                    <div class="card-front">
+                      <figure>
+                        <div class="img-bg"></div>
+                        <img src="../images/recipes/pexels-kristina-paukshtite-1146760.jpg" alt="Hamza" style="object-fit: cover;">
+                      </figure>
+                    </div>
+    
+                    <div class="card-back" style="
+                        background-color: #2b5747;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      ">
+                      <div>
+                        <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                          <div class="margin-bottom">
+                            <h2 class="flip-card-head">
+                              Pizza
+                            </h2>
+                            <p class="paragraph-style">
+                              by Hamza Doe
+                            </p>
+                          </div>
+                          <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                        </div>
+                        <p class="paragraph2-style">
+                          Pizza is a popular Italian dish that typically consists of a flattened dough topped with tomato sauce, cheese, and a variety of other toppings such as meats, vegetables, and herbs. It is usually baked in an oven and served hot, and can be enjoyed as a quick and convenient meal or as a shared dish among friends and family.                        </p>
+                      </div>
+                      <p class="prep-time">
+                        Prep time: 15 min.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3. kartica -->
+              <div class="col-3">
+                <div class="flip-card-container" style="--hue: 220">
+                  <div class="flip-card">
+                    <div class="card-front">
+                      <figure>
+                        <div class="img-bg"></div>
+                        <img src="../images/recipes/pexels-dana-tentis-1213710.jpg" alt="Selma" style="object-fit: cover;">
+                      </figure>
+                    </div>
+    
+                    <div class="card-back" style="
+                        background-color: #2b5747;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      ">
+                      <div>
+                        <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                          <div class="margin-bottom">
+                            <h2 class="flip-card-head">
+                              Salad
+                            </h2>
+                            <p class="paragraph-style">
+                              by Selma Joe
+                            </p>
+                          </div>
+                          <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                        </div>
+                        <p class="paragraph2-style">
+                          A salad is a dish that typically consists of a mixture of vegetables, fruits, herbs, and sometimes grains or proteins, dressed with a vinaigrette or other dressing. It is often served as a healthy and refreshing meal or as a side dish to complement a main course.                        </p>
+                      </div>
+                      <p class="prep-time">
+                        Prep time: 10 min.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. kartica -->
+              <div class="col-3">
+                <div class="flip-card-container" style="--hue: 220">
+                  <div class="flip-card">
+                    <div class="card-front">
+                      <figure>
+                        <div class="img-bg"></div>
+                        <img src="../images/recipes/pexels-dana-tentis-725991.jpg" alt="Yasmin" style="object-fit: cover;">
+                      </figure>
+                    </div>
+    
+                    <div class="card-back" style="
+                        background-color: #2b5747;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      ">
+                      <div>
+                        <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                          <div class="margin-bottom">
+                            <h2 class="flip-card-head">
+                              Salmon
+                            </h2>
+                            <p class="paragraph-style">
+                              by Yasmin Yale
+                            </p>
+                          </div>
+                          <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                        </div>
+                        <p class="paragraph2-style">
+                          Salmon is a popular fish known for its rich, buttery flavor and tender texture. It can be prepared in a variety of ways, including grilling, baking, poaching, or pan-searing, and can be accompanied by a range of ingredients such as vegetables, grains, and sauces.                </p>      
+                        </div>
+                      <p class="prep-time">
+                        Prep time: 45 min.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. kartica -->
+              <div class="col-3">
+                <div class="flip-card-container" style="--hue: 220">
+                  <div class="flip-card">
+                    <div class="card-front">
+                      <figure>
+                        <div class="img-bg"></div>
+                        <img src="../images/recipes/pexels-media-lens-king-6920656.jpg" alt="Mirza" style="object-fit: cover;">
+                      </figure>
+                    </div>
+    
+                    <div class="card-back" style="
+                        background-color: #2b5747;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      ">
+                      <div>
+                        <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                          <div class="margin-bottom">
+                            <h2 class="flip-card-head">
+                              Ćevapi
+                            </h2>
+                            <p class="paragraph-style">
+                              by Mirza Mrkva
+                            </p>
+                          </div>
+                          <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                        </div>
+                        <p class="paragraph2-style">
+                          Ćevapi is a traditional Bosnian dish made of grilled minced meat, typically beef or lamb, mixed with spices such as garlic or onion and formed into small sausage-shaped portions. It is often served with flatbread, diced onions, sour cream or ajvar.                      </p>
+                        </div>
+                      <p class="prep-time">
+                        Prep time: 20 min.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6. kartica -->
+              <div class="col-3">
+                <div class="flip-card-container" style="--hue: 220">
+                  <div class="flip-card">
+                    <div class="card-front">
+                      <figure>
+                        <div class="img-bg"></div>
+                        <img src="../images/recipes/pexels-polina-tankilevitch-4109998.jpg" alt="Benjamin" style="object-fit: cover;">
+                      </figure>
+                    </div>
+    
+                    <div class="card-back" style="
+                        background-color: #2b5747;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                      ">
+                      <div>
+                        <div class="card-head-style" style="display: flex; justify-content: space-between;">
+                          <div class="margin-bottom">
+                            <h2 class="flip-card-head">
+                              Chocolate Cake
+                            </h2>
+                            <p class="paragraph-style">
+                              by Benjamin Tyson
+                            </p>
+                          </div>
+                          <img src="../images/recipes/star.png" alt="icon1" class="icon">
+                        </div>
+                        <p class="paragraph2-style">
+                          Chocolate cake is a delicious dessert made from a chocolate-flavored batter that is typically baked in a round or rectangular pan. It is often served with a frosting or ganache made from chocolate and other ingredients, and can be decorated with a variety of toppings such as berries, nuts, or sprinkles.                    </p>   
+                        </div>
+                      <p class="prep-time">
+                        Prep time: 50 min.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">© 2023 Recipe App, All Rights Reserved </p>
+      </div>
+    </footer>
+    </div>
+    <script>
+      function toggleMenu() {
+          const slideMenu = document.querySelector('.slide-menu');
+          slideMenu.style.width = slideMenu.style.width === '0px' ? '290px' : '0px';
+
+          if (slideMenu.style.width === '290px') {
+        document.addEventListener('click', closeMenuOnClickOutside);
+    } else {
+        document.removeEventListener('click', closeMenuOnClickOutside);
+    }
+      }
+      function closeMenuOnClickOutside(event) {
+    const slideMenu = document.querySelector('.slide-menu');
+    
+    if (!event.target.closest('.slide-menu') && !event.target.closest('.hamburger')) {
+        slideMenu.style.width = '0px';
+        document.removeEventListener('click', closeMenuOnClickOutside);
+    }
+}
+  </script>
+</body>
+</html>
